@@ -1,15 +1,9 @@
-import AICalculting.NeuralNetwork;
 import FileHandling.FileHandling;
 import MainActions.MainActions;
-import MatrixCalculations.MatrixDouble2d;
-import PrintingAndDrawing.Drawing;
-import PrintingAndDrawing.PrintingNormalText;
-
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String neuralNetworkFilename = "neuralNetworkSave_v003.ser";
+        String neuralNetworkFilename = "neuralNetworkSave_v004.ser";
 
 
         //MainActions mainActions = new MainActions(new NeuralNetwork());
@@ -22,11 +16,16 @@ public class Main {
         double[][] testImages = FileHandling.loadChunkOfImages(2000, "test.csv");
 
         //mainActions.learnImages(trainImages, trainLabels);
+        //mainActions.learnImages(trainImages, trainLabels);
+        //mainActions.learnImages(trainImages, trainLabels);
+        //mainActions.learnImages(trainImages, trainLabels);
         //mainActions.saveNeuralNetworkToFile(neuralNetworkFilename);
 
-
-        //mainActions.liveTimeLearning(trainImages, trainLabels, 2000);
-        mainActions.showNumbersOnScreenAndGuess(testImages,700);
+        //mainActions.showAndCalculateResultRate(trainImages, trainLabels, 0, 20000);
+        //mainActions.liveTimeLearning(trainImages, trainLabels, 5000);
+        //mainActions.liveTimeLearning(trainImages, trainLabels, 5000);
+        //mainActions.liveTimeLearning(trainImages, trainLabels, 5000);
+        mainActions.showNumbersOnScreenAndGuess(testImages,130);
 
 
     }
