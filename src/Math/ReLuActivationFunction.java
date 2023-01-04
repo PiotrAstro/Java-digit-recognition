@@ -1,8 +1,7 @@
 package Math;
 
-import java.io.Serializable;
 
-public class ReLuActivationFunction implements  ActivationFunction, Serializable {
+public class ReLuActivationFunction implements  ActivationFunction{
     @Override
     public double activationFunction(double value) {
         return MathFunctions.reLu(value);

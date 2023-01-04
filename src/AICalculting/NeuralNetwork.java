@@ -17,7 +17,7 @@ public class NeuralNetwork implements Serializable {
     private int imageSize = MainActions.getImageSize();
     private int learningImagesChunkNumber = 10;
     private final int LayersNumber = 3;
-    private final int normalLayerNeuronsNumber = 100;
+    private final int normalLayerNeuronsNumber = 50;
     private final int lastLayerNeuronsNumber = 10;
     private NeuralLayer[] layers;
 

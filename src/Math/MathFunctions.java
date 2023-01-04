@@ -22,6 +22,16 @@ public class MathFunctions {
         }
     }
 
+    public static double leakReLu(double x)
+    {
+        if(x > 0) {
+            return x;
+        }
+        else {
+            return 0.1;
+        }
+    }
+
     public static double reLuDerivative(double x)
     {
         if(x > 0) {
@@ -29,6 +39,16 @@ public class MathFunctions {
         }
         else {
             return 0.0;
+        }
+    }
+
+    public static double leakReLuDerivative(double x)
+    {
+        if(x > 0) {
+            return 1;
+        }
+        else {
+            return 0.1;
         }
     }
 }

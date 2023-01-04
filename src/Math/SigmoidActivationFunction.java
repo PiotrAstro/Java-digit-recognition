@@ -2,7 +2,7 @@ package Math;
 
 import java.io.Serializable;
 
-public class SigmoidActivationFunction implements ActivationFunction, Serializable {
+public class SigmoidActivationFunction implements ActivationFunction{
 
     @Override
     public double activationFunction(double value) {
