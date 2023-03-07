@@ -12,7 +12,7 @@ public class NeuralLayer implements Serializable {
 
 
     private final double initialWeightsRange = 0.6;
-    private final double initialWeightsStart = 0;
+    private final double initialWeightsStart = 0.6;
     private final double initialBiasRange = 0;
     private final double initialBiasStart = 1;
 

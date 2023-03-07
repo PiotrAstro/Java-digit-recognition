@@ -11,8 +11,8 @@ public class NeuralNetwork implements Serializable {
     private static final long serialVersionUID = 2;
 
 
-    private double learningRate = 0.4;
-    private ActivationFunction normalLayerActivationFunction = new SigmoidActivationFunction();
+    private double learningRate = 0.0001;
+    private ActivationFunction normalLayerActivationFunction = new ReLuActivationFunction();
     private ActivationFunction lastLayerActivationFunction = new SigmoidActivationFunction();
     private int imageSize = MainActions.getImageSize();
     private int learningImagesChunkNumber = 10;
